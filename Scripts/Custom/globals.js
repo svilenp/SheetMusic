@@ -15,6 +15,7 @@
             },
 
             addElement = function (el) {
+                elements.push(el); 
             },
 
             addElementAtIndex = function (el, index) {
