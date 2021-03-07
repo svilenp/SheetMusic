@@ -1,0 +1,12 @@
+﻿<div id="notes" class="tab-pane fade">
+    <ul class="nav nav-pills nav-stacked float-left">
+        <li id="notesTimeTab" class="active disabled"><a class="disabled-link" data-toggle="tab" href="#time" aria-expanded="true">Time</a></li>
+        <li id="notesNoteTab" class="disabled"><a class="disabled-link" data-toggle="tab" href="#note" aria-expanded="false">Note</a></li>
+        <li id="notesOctaveTab" class="disabled"><a class="disabled-link" data-toggle="tab" href="#octave" aria-expanded="false">Octave</a></li>
+    </ul>
+    <div class="tab-content" id="notesTabContent">
+        @Html.Partial("_NotesTab_Time")
+        @Html.Partial("_NotesTab_Note")
+        @Html.Partial("_NotesTab_Octave")
+    </div>
+</div>

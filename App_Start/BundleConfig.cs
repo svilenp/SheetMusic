@@ -24,7 +24,12 @@ namespace SheetMusic
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/Custom.css",
+                      "~/Content/bootstrap-slider.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/customjs").Include(
+                        "~/Scripts/Custom/Common.js"));
         }
     }
 }

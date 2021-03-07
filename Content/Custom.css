@@ -1,0 +1,203 @@
+﻿/*** GENERAL ***/
+
+.sub-menu {
+    position: absolute !important;
+}
+
+.bordered-top {
+    border-top: 2px solid #dddddd !important;
+}
+
+.container {
+    margin-top: 2px;
+    background: #f8f8f8;
+}
+
+a.navbar-brand {
+    background: url(../Resources/Images/Logo1.png) no-repeat;
+}
+
+.collapse ul {
+    list-style: none;
+    position: relative;
+    left: 20%;
+}
+
+opacity-1 {
+    opacity: 1;
+    z-index: 4;
+    position: relative;
+    padding: 20px;
+}
+
+.container-box {
+    padding: 10px;
+    width: 40%;
+}
+
+.padding5 {
+    padding: 5px;
+}
+
+.align-bottom {
+    padding-top: 5px;
+    position: absolute;
+}
+
+.margin-left-small {
+    margin-left: 10px;
+}
+
+.col-small {
+    float: left;
+    padding-left: 15px;
+}
+
+.float-left {
+    float: left;
+}
+
+.txt-square {
+    width: 20px;
+    height: 20px;
+}
+
+.txt-small {
+    width: 40px;
+    height: 20px;
+}
+
+.glyphicon-remove {
+    color: red;
+}
+
+.page-header {
+    border: none;
+}
+
+/*** End GENERAL ***/
+
+/*** Sheet Tab ***/
+
+.label-div {
+    width: 70px;
+    padding: 5px 0 0 5px;
+}
+
+.tab-content {
+    height: 165px;
+}
+
+input, select, textarea#abc {
+    max-width: 680px;
+}
+
+.med-size {
+    font-size: medium;
+    height: 40px;
+    width: 50px;
+}
+
+.tab-content .centered {
+    padding-top: 40px;
+    padding-left: 100px;
+}
+
+.tab-content#sheetTabContent {
+    border: 2px solid #158CBA;
+    max-width: 550px;
+}
+
+.nav-tabs {
+    max-width: 450px;
+}
+
+    .nav-tabs > li > a {
+        border-color: #158CBA;
+    }
+
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+        border-color: #158CBA;
+        border-width: 2px 2px 0 2px;
+        background-color: #75CAEB;
+        font-weight: bold;
+        color: #fff;
+    }
+
+.row .col-small #addLine {
+    padding-top: 5px;
+    float: left;
+}
+
+.tab-content #general,
+.tab-content #others {
+    padding-top: 7px;
+}
+
+.col-small #sheetTitle {
+    margin-top: 5px;
+}
+
+.others-tab-images {
+    left: -9px;
+    position: relative;
+    top: -10px;
+}
+
+embed[type="video/quicktime"] {
+    display: none !important;
+}
+
+.disabled-link {
+    pointer-events: none;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+.opacity-half {
+    opacity: 0.65;
+}
+
+#octave #sheet-functions {
+    float: right;
+    position: relative;
+    top: -40px;
+}
+
+.align-bottom #showIndexes {
+    padding-left: 10px;
+}
+
+.float-padding-right {
+    float: right !important;
+    padding-right: 20px;
+}
+
+#midi a {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#sheet-functions #atIndex {
+}
+
+.note_selected {
+    fill: #000;
+}
+
+#note div a, #time div a, #octave div a {
+    margin: 1px;
+}
+
+.btn-default:hover {
+    color: #555555;
+    background-color: #d5d5d5;
+    border-color: #c3c3c3;
+}
+
+a.btn {
+    display: inline;
+}
+
+/*** End Sheet Tab ***/

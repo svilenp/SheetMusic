@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Music Sheet";
+}
+
+<div class="col-xs-12 col-md-12 col-md-offset-2">
+    <div class="bs-component">
+        <ul class="nav nav-tabs sheet">
+            <li class="active"><a data-toggle="tab" href="#general" aria-expanded="true">General</a></li>
+            <li class=""><a data-toggle="tab" href="#notes" aria-expanded="false">Notes</a></li>
+            <li class=""><a data-toggle="tab" href="#others" aria-expanded="false">Others</a></li>
+            <li id="liAbcTab" class="">
+                <a data-toggle="modal" class="btn-default" data-target=".bs-example-modal-lg" role="button">
+                    ABC
+                    <span data-toggle="tab" id="spanAbcTab" href="#abc" aria-expanded="true"></span>
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content" id="sheetTabContent">
+            @Html.Partial("_GeneralTab")
+            @Html.Partial("_NotesTab")
+            @Html.Partial("_OthersTab")
+            @Html.Partial("_AbcTab")
+        </div>
+    </div>
+    <br />
+    <a class="btn btn-link" id="showIndexes">Show indexes</a>
+
+    <a class="btn btn-primary btn-xs" id="exportToPdf" href="#">Download sheet</a>
+
+    <div id="midi" class="btn btn-primary btn-xs"></div>
+    <div id="musicSheetCanvas"></div>
+</div>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h4 id="myLargeModalLabel" class="modal-title">ABC standard</h4>
+            </div>
+
+            <div class="modal-body">
+                @Resources.SheetMusic.ABCText
+                <br />
+                <a target="_blank" href="@Resources.SheetMusic.ABCLink">@Resources.SheetMusic.ABCLink</a>
+                <br />
+                <br />
+                @Resources.SheetMusic.ABCNote
+                <br />
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
+                    <a class="btn btn-primary" data-toggle="tab" id="abcOk" aria-expanded="true" data-dismiss="modal">OK</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/Scripts/Custom/abcjs_editor_latest-min.js"></script>
+    <script src="~/Scripts/Custom/Export/jspdf.min.js"></script>
+    <script src="~/Scripts/Custom/Export/rgbcolor.js"></script>
+    <script src="~/Scripts/Custom/Export/StackBlur.js"></script>
+    <script src="~/Scripts/Custom/Export/canvg.js"></script>
+    <script src="~/Scripts/Custom/globals.js"></script>
+    <script src="~/Scripts/Custom/music-sheet.js"></script>
+}

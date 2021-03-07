@@ -1,0 +1,54 @@
+﻿@using SheetMusic.Hepers
+
+<div id="general" class="tab-pane fade active in">
+    <div class="row" id="clefsContainer">
+        <div class="col-small">
+            <div class="float-left label-div">
+                <span class="label label-primary">Clef:</span>
+            </div>
+            <label>
+                <input type="radio" value="optionG" id="optG" name="optionsClef" checked>
+                <img height="40" width="40" src="~/Resources/Images/clef-G.png" alt="clef-G" />
+            </label>
+            <label>
+                <input type="radio" value="optionF" id="optF" name="optionsClef">
+                <img height="40" width="40" src="~/Resources/Images/clef-F.png" alt="clef-F" />
+            </label>
+            <label>
+                <input type="radio" value="optionC" id="optC" name="optionsClef">
+                <img height="40" width="40" src="~/Resources/Images/clef-C.png" alt="clef-C" />
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-small">
+            <div class="float-left label-div">
+                <span class="label label-primary">Metrics:</span>
+            </div>
+        </div>
+        <div class="float-left">
+            <div>Beats per bar</div>
+            <div>Beat unit</div>
+        </div>
+        <div id="metricsContainer" class="col-small">
+            <div><input type="text" class="txt-square metrics-count" value="4" /></div>
+            <div><input type="text" class="txt-square metrics-unit" value="4" /></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-small">
+            <div class="float-left label-div">
+                <span class="label label-primary">Key: </span>
+            </div>
+            @Html.DropDownList("Keys", Html.MusicSheetKeys(), new { @Class = "btn-default padding5" })
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-small">
+            <div class="float-left label-div">
+                <span class="label label-primary">Title: </span>
+            </div>
+            <input type="text" id="sheetTitle" />
+        </div>
+    </div>
+</div>
