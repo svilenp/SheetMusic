@@ -276,7 +276,7 @@
                 reloadSheet();
 
                 $('#sheetTitle').blur(setSheetTitle);
-                $('#others .others-add a').click(addOtherElement);
+                $('#others a').click(addOtherElement);
                 $('#notesTabContent #time a').click(timeSelected);
                 $('#notesTabContent #note a').click(noteSelected);
                 $('#notesTabContent #octave .btn-group a').click(octaveSelected);
